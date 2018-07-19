@@ -67,9 +67,33 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ]; then
 
   echo "---> Moving binaries ..."
 
-  cp -rfv $LOCAL_SOURCE_DIR/$ARTIFACT_DIR/*${APP_SUFFIX}.war $DEPLOY_DIR/app.war 2> /dev/null
+  echo "Debugging Infos"
+  
+  echo "we were here:"
+  pwd
+  
+  echo "_____________________"
+  echo "LOCAL_SOURCE_DIR is:" $LOCAL_SOURCE_DIR
+  echo "contents:"
+  cd $LOCAL_SOURCE_DIR
+  ls
+  
+  echo "ARTIFACT_DIR is:" $ARTIFACT_DIR
+  echo "contents:"
+  cd $LOCAL_SOURCE_DIR/$ARTIFACT_DIR
+  ls
+  
+  echo "${APP_SUFFIX} is:" $APP_SUFFIX
+  echo "contents:"
+  cd $LOCAL_SOURCE_DIR/$ARTIFACT_DIR/*${APP_SUFFIX}
+  ls  
+  
+  cp -rv $LOCAL_SOURCE_DIR/$ARTIFACT_DIR/*${APP_SUFFIX}.war $DEPLOY_DIR/app.war 2> /dev/null
   echo "[INFO] Application war file is located in ${DEPLOY_DIR}/app.war"
 
+  echo "current directory is"
+  echo pwd
+  
   popd &> /dev/null
 
 else
