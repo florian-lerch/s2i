@@ -67,7 +67,7 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ]; then
 
   echo "---> Moving binaries ..."
 
-  echo "Debugging Infos"
+  echo "Debugging Infos follow here"
   
   echo "we were here:"
   pwd
