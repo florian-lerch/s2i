@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -e
+# 
+# set -e
 
 # Sources to build will be here
 LOCAL_SOURCE_DIR=/tmp/src
