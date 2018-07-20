@@ -33,7 +33,7 @@
         "source": {
           "type": "Git",
           "git": {
-            "uri": "https://github.com/florian-lerch/my-thai-star.git",
+            "uri": "https://github.com/florian-lerch/s2i.git",
             "ref": "master"
           }
         },
@@ -67,7 +67,7 @@
               "iconClass": "icon-nodejs",
               "tags": "builder,oasp,microservices,javascript,angular",
               "supports": "oasp:2.4",
-              "sampleRepo": "https://github.com/florian-lerch/my-thai-star.git",
+              "sampleRepo": "https://github.com/florian-lerch/s2i.git",
               "version": "1.0"
             }
           }
